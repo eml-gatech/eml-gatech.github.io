@@ -1,11 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,13 +13,12 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <div className="hero__subtitle">
+          Our group works on the understanding and design of defects in the bulk and at the interfaces of 
+          semiconductors by novel deposition and characterization techniques. We study how dimensionality 
+          and chemical composition in semiconductors affect electronic defect formation and strive to design 
+          deposition methods that allow us to control these materials at the nanoscale.
+      </div>
       </div>
     </header>
   );
@@ -34,7 +32,16 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div className='container'>
+          <h1><p className="heading new_title">News and Updates</p></h1>
+          <div className='tweets'>
+            <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="BaenaLab"
+            options={{height: 600, width: "100%"}}
+          />
+          </div>
+        </div>
       </main>
     </Layout>
   );
