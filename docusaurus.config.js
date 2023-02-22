@@ -14,13 +14,13 @@ const config = {
   url: 'https://eml-gatech.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/eml-gatech.github.io/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'eml-gatech', // Usually your GitHub org/user name.
   projectName: 'eml-gatech.github.io', // Usually your repo name.
-  deploymentBranch: 'deploment',
+  deploymentBranch: 'deployment',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -71,6 +71,30 @@ const config = {
             docId: 'People/prof',
             position: 'right',
             label: 'People',
+          },
+          {
+            type: 'doc',
+            docId: 'publications',
+            position: 'right',
+            label: 'Publications',
+          },
+          {
+            type: 'doc',
+            docId: 'teaching',
+            position: 'right',
+            label: 'Teaching',
+          },
+          {
+            type: 'doc',
+            docId: 'gallery',
+            position: 'right',
+            label: 'Gallery',
+          },
+          {
+            type: 'doc',
+            docId: 'contact',
+            position: 'right',
+            label: 'Contact',
           },
         ],
       },
