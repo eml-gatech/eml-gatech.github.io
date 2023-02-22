@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbaena=self.webpackChunkbaena||[]).push([[5725],{4421:e=>{e.exports=JSON.parse('{"permalink":"/eml-gatech.github.io/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
