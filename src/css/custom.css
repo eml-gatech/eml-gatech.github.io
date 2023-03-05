@@ -32,20 +32,27 @@
 }
 
 .hero {
-  background-image: url("/static/img/Sci_Solar.jpg");
+  background-image: url("/static/img/Sci_Solar.png");
   background-size: cover;
   color: #ffffff;
+  background-color: #ffffff00;
 }
 
 
-.hero > .container {
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.14);
+.hero > .info {
+  /* From https://css.glass */
+/* background: rgb(255, 255, 255); */
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0px);
+backdrop-filter: blur(30px);
 -webkit-backdrop-filter: blur(0px);
 border: 1px solid rgba(255, 255, 255, 0.13);
+width: 60%;
+padding: 20px 20px 20px 20px;
+}
+
+.hero > .carousel {
+  width: 30%;
 }
 
 .tweets {
